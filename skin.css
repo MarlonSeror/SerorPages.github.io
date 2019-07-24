@@ -5,53 +5,57 @@ body{
 }
 
 header{
-    font-size: 2em;
-    color: darkred; 
-    margin-top: 30px; 
-    margin-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header h1{
+    color: rgb(180, 0, 36);
+    font-size: 3.5em;
 }
 
 nav{
-    
+    flex-grow: 2;
 }
 
 nav ul{
-    list-style: none;
-    display: inline-flex;
-    width: 100%;
-    color: whitesmoke;
-    padding-left: 0px;
-    margin-top: 0px;
-    
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
 }
 
 nav ul li{
-    flex-grow: 1;
-    text-align: center;
-    margin: 1px;
-    background-color: darkred;
-    width: 100%;
-    height: 125%;
+    list-style: none;
+    margin: 2%;
+    
 }
 
 nav ul li a{
-    display: block;
-    color:inherit;
+    color: crimson;
     text-decoration: none;
-    font-size: 145%;
-    width: 100%;
-    height: 100%;
-    box-sizing: content-box;
+    transition: 0.75s ease-in-out;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    font-size: 110%;
 }
 
 nav ul li a:hover{
-    color: white;
-    background-color: crimson;
+   border-top: 1px solid rgba(185, 7, 43, 0.836);
+   border-bottom: 1px solid crimson;
+    
 }
 
 main{
-    position: relative;
-    margin-bottom: 70px;
+    width: 85%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+main h2{
+    color: crimson;
 }
 
 main figure{
@@ -59,19 +63,22 @@ main figure{
 
     height: 90%;
     
-    
     margin-left:7%;
-    margin-right: 0px;
+    margin-right: 7%;
     
 }
 
 main ul{
-    margin-left: 7%;
-    padding: 0px;
+    width:85%;
+    margin: auto;
+    padding: 5px;
+}
+
+main ul li{
+    margin-left: 5%;
 }
 
 #marlon{
-    border:1px solid lightgray; 
     padding: 5px 10px 5px 10px;
 }
 
@@ -83,13 +90,12 @@ main ul{
     text-align: justify;
 }*/
 .main_txt{
-    float: right;
-    width: 35%; 
+    padding: 12px;
     text-align: justify;
 
-    margin-right: 7%;
-    border:1px solid lightgray; 
-    padding: 12px;
+    margin-right: 9%;
+    margin-left: 4%;
+
 }
 
 footer{
@@ -103,10 +109,14 @@ footer{
 }
 
 hr{
-    width: 73%;
-    height: 2px;
-    color: crimson;
-    margin-left: 13.5%;
+    width: 65%;
+    border: 1px solid rgba(177, 13, 43, 0.63);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main h2{
+
 }
 
 @media(max-width:950px){
