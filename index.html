@@ -9,7 +9,7 @@
     
     <body>
         <header>
-            <h1>Marlon Seror</h1>
+            <h1><a href="#">Marlon Seror</a></h1>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -40,7 +40,7 @@
                             <li>item</li>   
                             <li>item</li>
                         </ul>
-                    <p>Contact:</p>
+                    <p>Contact: <a id="mail"></a></p>
                     
             </div>
             
@@ -52,6 +52,24 @@
         
 
     </body>
+
+    <script>
+        var user = 'marlonseror',
+        domain = 'gmail.com',
+        element = document.getElementById('mail');
+
+        element.innerHTML = user + '@' + domain;
+        element.setAttribute("style", "color:black; text-decoration:none;");
+        element.setAttribute("href", "mailto:marlonseror@gmail.com");
+
+        element.addEventListener("mouseover", function( event){
+            event.target.setAttribute("style", "text-decoration:underline; color:black;");
+        }, false);
+        element.addEventListener("mouseleave", function( event){
+            event.target.setAttribute("style", "text-decoration:none; color:black;");
+        }, false);
+
+    </script>
 
 
 </html>
